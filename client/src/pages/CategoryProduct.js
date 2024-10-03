@@ -3,6 +3,8 @@ import Layout from "../components/Layout/Layout";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/CategoryProductStyles.css";
 import axios from "axios";
+
+const API_URL = 'https://e-commerce-backen-ten.vercel.app';
 const CategoryProduct = () => {
   const params = useParams();
   const navigate = useNavigate();
@@ -15,7 +17,7 @@ const CategoryProduct = () => {
   const getPrductsByCat = async () => {
     try {
       const { data } = await axios.get(
-        `/api/v1/product/product-category/${params.slug}`
+        `{API_URL}/api/v1/product/product-category/${params.slug}`
       );
       setProducts(data?.products);
       setCategory(data?.category);

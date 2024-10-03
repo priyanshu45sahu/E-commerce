@@ -13,7 +13,7 @@ const ForgotPasssword = () => {
   const navigate = useNavigate();
 
   // form function
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+  const API_URL = 'https://e-commerce-backen-ten.vercel.app';
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

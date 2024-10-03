@@ -21,7 +21,7 @@ const HomePage = () => {
   const [loading, setLoading] = useState(false);
 
   //get all cat
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+  const API_URL = 'https://e-commerce-backen-ten.vercel.app';
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(`{API_URL}/api/v1/category/get-category`);

@@ -8,7 +8,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   //getall products
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+  const API_URL = 'https://e-commerce-backen-ten.vercel.app';
   const getAllProducts = async () => {
     try {
       const { data } = await axios.get(`{API_URL}/api/v1/product/get-product`);
@@ -35,12 +35,12 @@ const Products = () => {
             {products?.map((p) => (
               <Link
                 key={p._id}
-                to={`/dashboard/admin/product/${p.slug}`}
+                to={`{API_URL}/dashboard/admin/product/${p.slug}`}
                 className="product-link"
               >
                 <div className="card m-2" style={{ width: "18rem" }}>
                   <img
-                    src={`/api/v1/product/product-photo/${p._id}`}
+                    src={`{API_URL}/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}
                   />

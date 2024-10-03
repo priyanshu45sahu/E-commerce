@@ -5,6 +5,8 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import CategoryForm from "../../components/Form/CategoryForm";
 import { Modal } from "antd";
+
+const API_URL = 'https://e-commerce-backen-ten.vercel.app';
 const CreateCategory = () => {
   const [categories, setCategories] = useState([]);
   const [name, setName] = useState("");
@@ -12,7 +14,7 @@ const CreateCategory = () => {
   const [selected, setSelected] = useState(null);
   const [updatedName, setUpdatedName] = useState("");
   //handle Form
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -53,7 +55,7 @@ const CreateCategory = () => {
     e.preventDefault();
     try {
       const { data } = await axios.put(
-        `/ api / v1 / category / update - category / ${selected._id}`,
+        `{API_URL}/ api / v1 / category / update - category / ${selected._id}`,
         { name: updatedName }
       );
       if (data?.success) {
@@ -73,7 +75,7 @@ const CreateCategory = () => {
   const handleDelete = async (pId) => {
     try {
       const { data } = await axios.delete(
-        `/ api / v1 / category / delete -category / ${pId}`
+        `{API_URL}/ api / v1 / category / delete -category / ${pId}`
       );
       if (data.success) {
         toast.success(`category is deleted`);

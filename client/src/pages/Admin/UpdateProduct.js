@@ -21,7 +21,7 @@ const UpdateProduct = () => {
   const [id, setId] = useState("");
 
   //get single product
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+  const API_URL = 'https://e-commerce-backen-ten.vercel.app';
   const getSingleProduct = async () => {
     try {
       const { data } = await axios.get(

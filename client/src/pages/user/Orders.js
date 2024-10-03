@@ -5,7 +5,7 @@ import axios from "axios";
 import { useAuth } from "../../context/auth";
 import moment from "moment";
 
-const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+const API_URL = 'https://e-commerce-backen-ten.vercel.app';
 const Orders = () => {
   const [orders, setOrders] = useState([]);
   const [auth, setAuth] = useAuth();

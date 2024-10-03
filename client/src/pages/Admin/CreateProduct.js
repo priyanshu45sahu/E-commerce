@@ -19,7 +19,7 @@ const CreateProduct = () => {
   const [photo, setPhoto] = useState("");
 
   //get all category
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+  const API_URL = 'https://e-commerce-backen-ten.vercel.app';
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(`{API_URL}/api/v1/category/get-category`);
@@ -48,7 +48,7 @@ const CreateProduct = () => {
       productData.append("photo", photo);
       productData.append("category", category);
       const { data } = axios.post(
-        "/api/v1/product/create-product",
+        `{API_URL}/api/v1/product/create-product`,
         productData
       );
       if (data?.success) {

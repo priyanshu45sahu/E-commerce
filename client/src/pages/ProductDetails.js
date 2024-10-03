@@ -4,7 +4,7 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/ProductDetailsStyles.css";
 
-const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+const API_URL = 'https://e-commerce-backen-ten.vercel.app';
 const ProductDetails = () => {
   const params = useParams();
   const navigate = useNavigate();

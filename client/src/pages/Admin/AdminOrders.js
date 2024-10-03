@@ -8,6 +8,7 @@ import moment from "moment";
 import { Select } from "antd";
 const { Option } = Select;
 
+const API_URL = 'https://e-commerce-backen-ten.vercel.app';
 const AdminOrders = () => {
   const [status, setStatus] = useState([
     "Not Process",
@@ -16,7 +17,7 @@ const AdminOrders = () => {
     "deliverd",
     "cancel",
   ]);
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+
   const [changeStatus, setCHangeStatus] = useState("");
   const [orders, setOrders] = useState([]);
   const [auth, setAuth] = useAuth();
