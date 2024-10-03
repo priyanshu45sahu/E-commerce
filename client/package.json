@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "e-commerce-backen-ten.vercel.app",
+  "proxy": "https://e-commerce-backen-ten.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
