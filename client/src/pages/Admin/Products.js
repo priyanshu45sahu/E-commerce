@@ -8,9 +8,10 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   //getall products
+  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
   const getAllProducts = async () => {
     try {
-      const { data } = await axios.get("/api/v1/product/get-product");
+      const { data } = await axios.get(`{API_URL}/api/v1/product/get-product`);
       setProducts(data.products);
     } catch (error) {
       console.log(error);

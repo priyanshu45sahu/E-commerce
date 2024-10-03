@@ -13,10 +13,11 @@ const ForgotPasssword = () => {
   const navigate = useNavigate();
 
   // form function
+  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/v1/auth/forgot-password", {
+      const res = await axios.post(`{API_URL}/api/v1/auth/forgot-password`, {
         email,
         newPassword,
         answer,
