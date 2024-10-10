@@ -7,6 +7,8 @@ import { Select } from "antd";
 import { useNavigate, useParams } from "react-router-dom";
 const { Option } = Select;
 
+const API_URL = 'https://e-commerce-backen-ten.vercel.app';
+
 const UpdateProduct = () => {
   const navigate = useNavigate();
   const params = useParams();
@@ -21,7 +23,7 @@ const UpdateProduct = () => {
   const [id, setId] = useState("");
 
   //get single product
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app';
+
   const getSingleProduct = async () => {
     try {
       const { data } = await axios.get(
@@ -52,7 +54,7 @@ const UpdateProduct = () => {
       }
     } catch (error) {
       console.log(error);
-      toast.error("Something wwent wrong in getting catgeory");
+      toast.error("Something went wrong in getting catgeory");
     }
   };
 

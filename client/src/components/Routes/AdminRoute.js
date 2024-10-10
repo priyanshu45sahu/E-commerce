@@ -4,13 +4,14 @@ import { Outlet } from "react-router-dom";
 import axios from "axios";
 import Spinner from "../Spinner";
 
+const API_URL = 'https://e-commerce-backen-ten.vercel.app';
 export default function PrivateRoute() {
   const [ok, setOk] = useState(false);
   const [auth, setAuth] = useAuth();
 
   useEffect(() => {
     const authCheck = async () => {
-      const res = await axios.get("/api/v1/auth/admin-auth");
+      const res = await axios.get(`${API_URL}/api/v1/auth/admin-auth`);
       if (res.data.ok) {
         setOk(true);
       } else {

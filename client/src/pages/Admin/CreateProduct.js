@@ -7,6 +7,7 @@ import { Select } from "antd";
 import { useNavigate } from "react-router-dom";
 const { Option } = Select;
 
+const API_URL = 'https://e-commerce-backen-ten.vercel.app';
 const CreateProduct = () => {
   const navigate = useNavigate();
   const [categories, setCategories] = useState([]);
@@ -19,7 +20,7 @@ const CreateProduct = () => {
   const [photo, setPhoto] = useState("");
 
   //get all category
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app';
+
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(`${API_URL}/api/v1/category/get-category`);
