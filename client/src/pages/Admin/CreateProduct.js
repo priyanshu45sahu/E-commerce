@@ -22,7 +22,7 @@ const CreateProduct = () => {
   const API_URL = 'https://e-commerce-backen-ten.vercel.app';
   const getAllCategory = async () => {
     try {
-      const { data } = await axios.get(`{API_URL}/api/v1/category/get-category`);
+      const { data } = await axios.get(`${API_URL}/api/v1/category/get-category`);
       if (data?.success) {
         setCategories(data?.category);
       }
@@ -48,7 +48,7 @@ const CreateProduct = () => {
       productData.append("photo", photo);
       productData.append("category", category);
       const { data } = axios.post(
-        `{API_URL}/api/v1/product/create-product`,
+        `${API_URL}/api/v1/product/create-product`,
         productData
       );
       if (data?.success) {
