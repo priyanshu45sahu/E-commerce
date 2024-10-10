@@ -22,12 +22,12 @@ const Profile = () => {
     setEmail(email);
     setAddress(address);
   }, [auth?.user]);
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+  const API_URL = 'https://e-commerce-backen-ten.vercel.app';
   // form function
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.put(`{API_URL}/api/v1/auth/profile`, {
+      const { data } = await axios.put(`${API_URL}/api/v1/auth/profile`, {
         name,
         email,
         password,
