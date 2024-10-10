@@ -14,11 +14,11 @@ const Login = () => {
   const location = useLocation();
 
   // form function
-  const API_URL = 'https://e-commerce-backen-ten.vercel.app/api/v1';
+  const API_URL = 'https://e-commerce-backen-ten.vercel.app';
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${API_URL}/auth/login`, {
+      const res = await axios.post(`${API_URL}/api/v1/auth/login`, {
         email,
         password,
       });
