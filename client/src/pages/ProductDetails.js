@@ -71,7 +71,7 @@ const ProductDetails = () => {
                 JSON.stringify([...cart, p])
               );
               toast.success("Item Added to cart");
-            }}>ADD TO CART</button>
+            }} >ADD TO CART</button>
         </div>
       </div>
       <hr />
