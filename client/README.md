@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# MegaStore Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the MegaStore Client! This is a front-end application for an eCommerce website built using React and Ant Design. It communicates with a backend server to provide a seamless shopping experience.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Scripts](#scripts)
+- [Dependencies](#dependencies)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User authentication and profile management
+- Product listing and detail views
+- Shopping cart functionality
+- Secure payment processing with Braintree
+- Responsive design using Ant Design
+- Real-time notifications with React Toastify
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Dependencies
 
-### `npm test`
+This project utilizes several libraries to enhance functionality. Below is a list of dependencies used in the project:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **antd**: A design system and UI library for enterprise-level products, offering a set of high-quality components.
+- **axios**: A promise-based HTTP client for the browser and Node.js, used for making API requests.
+- **braintree-web-drop-in-react**: A React component for Braintree's Drop-in UI, simplifying payment integration.
+- **moment**: A library for parsing, validating, manipulating, and formatting dates.
+- **react**: A JavaScript library for building user interfaces.
+- **react-dom**: The entry point to the DOM and server renderers for React.
+- **react-helmet**: A reusable React component that manages changes to the document head.
+- **react-hot-toast**: A library for showing toast notifications in React applications.
+- **react-icons**: A set of customizable icons as React components.
+- **react-router-dom**: Declarative routing for React.js, enabling navigation in the application.
+- **react-scripts**: Scripts and configuration used by Create React App.
+- **react-toastify**: A library for easily adding notifications to your React app.
+- **web-vitals**: A library for measuring and reporting on the performance of web applications.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For a complete list of dependencies and their versions, check the `package.json` file.
